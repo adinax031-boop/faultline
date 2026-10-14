@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="payments"><testcase classname="Checkout" name="concurrent_checkout" time="1.2"><failure message="Timeout waiting for worker 123">Timeout waiting for worker 123</failure></testcase><testcase classname="Checkout" name="valid_card" time="0.2"/></testsuite>
