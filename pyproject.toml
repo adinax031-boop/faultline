@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faultline-ci"
+version = "0.1.0"
+description = "Evidence-first flaky-test intelligence from JUnit history"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Faultline contributors"}]
+keywords = ["junit", "flaky-tests", "ci", "testing", "observability"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Topic :: Software Development :: Testing"]
+dependencies = []
+
+[project.scripts]
+faultline = "faultline.cli:main"
+
+[project.urls]
+Repository = "https://github.com/adinax031-boop/faultline"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+faultline = ["dashboard.html"]
